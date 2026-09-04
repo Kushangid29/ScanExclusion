@@ -21,5 +21,6 @@ steps:
     ProjectName: 'ADO-ScanExclusion-Test'
     Alias: 'scanexclusion'
     Host: 'test'
+    ScanFolders: '$(Build.SourcesDirectory)'
 
 
