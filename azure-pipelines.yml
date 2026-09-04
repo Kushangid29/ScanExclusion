@@ -1,0 +1,25 @@
+# Starter pipeline
+
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: pluginwindowsblragent
+ 
+
+steps:
+
+
+- task: Code Insight Scan@3
+  inputs:
+    URL: 'http://scac9-mysql58.flexera.com:8888/codeinsight'
+    Token: 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6MSwiaWF0IjoxNzU1OTczODYzfQ.qTJ98Vg7OBk2RsifKcEXTUXqFth6lTOONK1Qp0dvyRiyoOdMld9h4qZBgndgCdSMWnpXrbUgViRTovwSSJ-c0w'
+    ProjectName: 'ADO-ScanExclusion-Test'
+    Alias: 'scanexclusion'
+    Host: 'test'
+
+
