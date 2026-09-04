@@ -14,7 +14,7 @@ pool:
 steps:
 
 
-- task: Code Insight Scan@3
+- task: VineetInsightScan@4
   inputs:
     URL: 'http://scac9-mysql58.flexera.com:8888/codeinsight'
     Token: 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6MSwiaWF0IjoxNzU1OTczODYzfQ.qTJ98Vg7OBk2RsifKcEXTUXqFth6lTOONK1Qp0dvyRiyoOdMld9h4qZBgndgCdSMWnpXrbUgViRTovwSSJ-c0w'
